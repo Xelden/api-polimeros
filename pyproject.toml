@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "api-polimeros"
+version = "0.1.0"
+description = ""
+authors = ["Xelden <anpiz@protonmail.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.2"
+
+[tool.poetry.scripts]
+api-polimeros = 'src.main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
